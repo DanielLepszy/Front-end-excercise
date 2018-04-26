@@ -1,10 +1,89 @@
 @import "_settings";
-
 body {
-    background-color:$color-bg;
+    background-color: #f9f9f9;
     color: $color-text;
-   
-}  
-div {
-    display:flex;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    margin: 0px !important;
+    padding: 0px;
+}
+
+#top {
+    display: flex;
+    background-color: $color-bg;
+    width: 100vw;
+    box-shadow: 0px 1px 4px #e1e1e1;
+}
+
+#mainOptions {
+    display: flex;
+}
+
+#mainOptions p {
+    margin-left: 15px;
+    border: 1px solid black;
+}
+
+#userPanel {
+    display: flex;
+    border: 1px solid black;
+}
+
+#userPanel img {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #c3c3c3;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 50%;
+    top: 50%;
+    transform: translate(0%, 50%);
+}
+
+#container {
+    margin: 5px;
+    width: 60%;
+    height: auto;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+}
+
+#topOfContainer {
+    display: flex;
+    flex-flow: row-reverse wrap;
+    margin: 5px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+#table {
+    margin: 5px;
+    border: 1px solid black;
+    height: auto;
+}
+
+#footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    font-size:10px;
+}
+
+.advertisement {
+    padding: 5px;
+    width: 30%;
+}
+
+.advertisement:not(:last-child) {
+    border-right: 5px solid black;
 }
