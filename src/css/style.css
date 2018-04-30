@@ -18,35 +18,37 @@ body {
   display: -ms-flexbox;
   display: flex;
   background-color: #ffffff;
+  position: absolute;
+  left: 0px;
+  top: 0px;
   width: 100vw;
+  height: 82px;
   -webkit-box-shadow: 0px 1px 4px #e1e1e1;
           box-shadow: 0px 1px 4px #e1e1e1; }
 
 #mainOptions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-#mainOptions p {
-  margin-left: 15px;
-  border: 1px solid black; }
-
-#userPanel {
+  position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid black; }
+  left: 144px;
+  height: 82px;
+  border-left: 1px solid #e1e1e1; }
 
-#userPanel img {
-  width: 25px;
-  height: 25px;
+#mainOptions p {
+  margin-left: 15px;
+  font-size: 15px;
+  font-family: "HelveticaNeueLTStd";
+  line-height: 3.286; }
+
+#mainOptions img {
+  position: relative;
+  margin-left: 371px;
+  width: 36px;
+  height: 36px;
+  top: 26px;
   border: 1px solid #c3c3c3;
-  margin: 0px;
-  padding: 0px;
-  border-radius: 50%;
-  top: 50%;
-  -webkit-transform: translate(0%, 50%);
-          transform: translate(0%, 50%); }
+  border-radius: 50%; }
 
 #container {
   display: -webkit-box;
@@ -56,14 +58,27 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
   -ms-flex-item-align: center;
       align-self: center;
   margin: 5px;
-  width: 60%;
   height: auto;
-  border: 1px solid black;
   position: absolute;
-  margin-top: 100px; }
+  margin-top: 110px; }
+
+.arrows {
+  position: relative;
+  width: 24px;
+  height: 44px;
+  border: 1px solid silver;
+  border-radius: 5px; }
+
+.arrows img {
+  width: 9px;
+  height: 16px;
+  position: absolute;
+  top: 13.5px;
+  left: widthOfArrow/2; }
 
 #topOfContainer {
   display: -webkit-box;
@@ -74,6 +89,7 @@ body {
   border: 1px solid black; }
 
 #tableBox {
+  border-radius: 2%;
   margin: 5px;
   height: auto;
   width: auto;
@@ -120,3 +136,49 @@ table td {
 
 .advertisement:not(:last-child) {
   border-right: 2px solid black; }
+
+.Layer_154 {
+  background-image: url("Layer 154.png");
+  position: absolute;
+  left: 3px;
+  top: 7px;
+  width: 2564px;
+  height: 82px;
+  z-index: 184; }
+
+.Layer_15 {
+  background-image: url("Layer 15.png");
+  opacity: 0.439;
+  position: absolute;
+  left: 977px;
+  top: 57px;
+  width: 25px;
+  height: 2px;
+  z-index: 185; }
+
+.Layer_149 {
+  background-image: url("Layer 149.png");
+  top: 0px;
+  width: 1px;
+  height: 79px;
+  z-index: 186; }
+
+.Rounded_Rectangle_2 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: silver;
+  border-radius: 0px;
+  background-color: rgba(255, 255, 255, 0);
+  position: absolute;
+  left: 1129px;
+  top: 113px;
+  width: 28px;
+  height: 46px;
+  z-index: 6; }
+
+.Arrow {
+  background-color: #7d7d7d;
+  position: absolute;
+  left: 1139px;
+  top: 129px;
+  z-index: 7; }

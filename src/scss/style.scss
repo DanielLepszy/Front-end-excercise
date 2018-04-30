@@ -5,53 +5,80 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height: 100vh;
+    height:100vh;
+    // width: 2564px;
+    // height:1440px;
     margin: 0px !important;
     padding: 0px;
+    // overflow: hidden;
 }
 
 #top {
     display: flex;
     background-color: $color-bg;
+    position: absolute;
+    left: 0px;
+    top: 0px;
     width: 100vw;
+    height: 82px;
     box-shadow: 0px 1px 4px #e1e1e1;
 }
 
 #mainOptions {
+
+    position: absolute;
     display: flex;
+    left: 144px;
+    height: 82px;
+    border-left:1px solid #e1e1e1;
 }
 
 #mainOptions p {
+    
     margin-left: 15px;
-    border: 1px solid black;
+    font-size: 15px;
+    font-family: "HelveticaNeueLTStd";
+    line-height: 3.286;
 }
-
-#userPanel {
-    display: flex;
-    border: 1px solid black;
-}
-
-#userPanel img {
-    width: 25px;
-    height: 25px;
-    border: 1px solid #c3c3c3;
-    margin: 0px;
-    padding: 0px;
-    border-radius: 50%;
-    top: 50%;
-    transform: translate(0%, 50%);
+#mainOptions img 
+{
+    position: relative;
+    margin-left: 371px;
+    width: 36px;
+    height: 36px;
+    top: 26px;
+    border:1px solid #c3c3c3;
+    border-radius:50%;
 }
 
 #container {
     display: flex;
     flex-direction: column;
+    position: relative;
     align-self: center;
     margin: 5px;
-    width: 60%;
     height: auto;
-    border: 1px solid black;
     position: absolute;
-    margin-top: 100px;
+    margin-top: 110px;
+   
+}
+.arrows
+{
+    position: relative;
+    width:$widthOfArrow;
+    height: $heightOfArrow;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 5px;
+
+}
+.arrows img
+{
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    top:13.5px;
+    left:$PositionOXArrow;
+    ;
 }
 
 #topOfContainer {
@@ -62,6 +89,7 @@ body {
 }
 
 #tableBox {
+    border-radius:2%;
     margin: 5px;
     height: auto;
     width: auto;
@@ -122,3 +150,54 @@ table td {
 //         top:75%;
 //     }
 // }
+.Layer_154 {
+    background-image: url("Layer 154.png");
+    position: absolute;
+    left: 3px;
+    top: 7px;
+    width: 2564px;
+    height: 82px;
+    z-index: 184;
+  }
+  
+  .Layer_15 {
+    background-image: url("Layer 15.png");
+    opacity: 0.439;
+    position: absolute;
+    left: 977px;
+    top: 57px;
+    width: 25px;
+    height: 2px;
+    z-index: 185;
+  }
+  .Layer_149 {
+    background-image: url("Layer 149.png");
+    
+  
+    top: 0px;
+    width: 1px;
+    height: 79px;
+    z-index: 186;
+  }
+  .Rounded_Rectangle_2 {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(192, 192, 192);
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0);
+    position: absolute;
+    left: 1129px;
+    top: 113px;
+    width: 28px;
+    height: 46px;
+    z-index: 6;
+  }
+  .Arrow {
+    background-color: rgb(125, 125, 125);
+    position: absolute;
+    left: 1139px;
+    top: 129px;
+ 
+    z-index: 7;
+  }
+  
