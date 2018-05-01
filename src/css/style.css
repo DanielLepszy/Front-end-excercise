@@ -96,7 +96,7 @@ body {
 
 #topOfContainer .selectProtein {
   margin-right: 0px;
-  margin-left: 110px; }
+  margin-left: 135px; }
 
 #topOfContainer .weekProgress p,
 #topOfContainer .selectProtein p {
@@ -139,6 +139,10 @@ body {
   padding-left: 45px;
   padding-right: 45px; }
 
+.proteinOptions img {
+  padding-left: 10px;
+  padding-top: 10px; }
+
 #tableBox {
   border-radius: 2%;
   margin: 5px;
@@ -153,6 +157,9 @@ body {
 
 .tableCells tr:not(:nth-child(1)):not(:nth-child(7)) {
   border-top: 1px solid black; }
+
+.tableCells tr td:first-child {
+  background-color: #d5d6ca; }
 
 .tableCells th,
 .tableCells td {
