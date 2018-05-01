@@ -41,7 +41,7 @@ body {
   font-family: "HelveticaNeueLTStd";
   line-height: 3.286; }
 
-#mainOptions img {
+#mainOptions img:not(:last-child) {
   position: relative;
   margin-left: 371px;
   width: 36px;
@@ -49,6 +49,15 @@ body {
   top: 26px;
   border: 1px solid #c3c3c3;
   border-radius: 50%; }
+
+#mainOptions img:last-child {
+  position: relative;
+  margin-left: 10px;
+  width: 8px;
+  height: 4px;
+  top: 50%;
+  -webkit-transform: translate(0%, -50%);
+          transform: translate(0%, -50%); }
 
 #container {
   display: -webkit-box;
@@ -66,9 +75,49 @@ body {
   position: absolute;
   margin-top: 110px; }
 
+#topOfContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 5px;
+  height: 60px;
+  border: 1px solid black; }
+
+#topOfContainer .weekProgress,
+#topOfContainer .selectProtein {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 110px; }
+
+#topOfContainer .selectProtein {
+  margin-right: 0px;
+  margin-left: 110px; }
+
+#topOfContainer .weekProgress p,
+#topOfContainer .selectProtein p {
+  font-size: 9px;
+  color: #9d9d9d;
+  margin: 0px 1px 0px 10px; }
+
+#topOfContainer .weekProgressChart table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: right;
+  padding: 0px; }
+
+#topOfContainer .weekProgressChart img {
+  margin: -1px;
+  padding-left: 0px;
+  border: 0px; }
+
 .arrows {
   position: relative;
-  width: 24px;
+  min-width: 24px;
   height: 44px;
   border: 1px solid silver;
   border-radius: 5px; }
@@ -78,15 +127,17 @@ body {
   height: 16px;
   position: absolute;
   top: 13.5px;
-  left: widthOfArrow/2; }
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%); }
 
-#topOfContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 5px;
-  height: 60px;
-  border: 1px solid black; }
+#topOfContainer .numberOfWeek p {
+  color: #ff801a;
+  font-size: 46px;
+  font-family: Helvetica;
+  margin: 0px;
+  padding-left: 45px;
+  padding-right: 45px; }
 
 #tableBox {
   border-radius: 2%;
@@ -95,22 +146,22 @@ body {
   width: auto;
   overflow-x: auto; }
 
-table {
+.tableCells {
   border-collapse: collapse;
   width: 100%;
   background-color: #ffffff; }
 
-table tr:not(:nth-child(1)):not(:nth-child(7)) {
+.tableCells tr:not(:nth-child(1)):not(:nth-child(7)) {
   border-top: 1px solid black; }
 
-table th,
-table td {
+.tableCells th,
+.tableCells td {
   border-right: 1px solid black; }
 
-table th {
+.tableCells th {
   padding: 10px; }
 
-table td {
+.tableCells table td {
   padding-left: 5px;
   text-align: left; }
 
@@ -136,49 +187,3 @@ table td {
 
 .advertisement:not(:last-child) {
   border-right: 2px solid black; }
-
-.Layer_154 {
-  background-image: url("Layer 154.png");
-  position: absolute;
-  left: 3px;
-  top: 7px;
-  width: 2564px;
-  height: 82px;
-  z-index: 184; }
-
-.Layer_15 {
-  background-image: url("Layer 15.png");
-  opacity: 0.439;
-  position: absolute;
-  left: 977px;
-  top: 57px;
-  width: 25px;
-  height: 2px;
-  z-index: 185; }
-
-.Layer_149 {
-  background-image: url("Layer 149.png");
-  top: 0px;
-  width: 1px;
-  height: 79px;
-  z-index: 186; }
-
-.Rounded_Rectangle_2 {
-  border-style: solid;
-  border-width: 1px;
-  border-color: silver;
-  border-radius: 0px;
-  background-color: rgba(255, 255, 255, 0);
-  position: absolute;
-  left: 1129px;
-  top: 113px;
-  width: 28px;
-  height: 46px;
-  z-index: 6; }
-
-.Arrow {
-  background-color: #7d7d7d;
-  position: absolute;
-  left: 1139px;
-  top: 129px;
-  z-index: 7; }

@@ -40,7 +40,7 @@ body {
     font-family: "HelveticaNeueLTStd";
     line-height: 3.286;
 }
-#mainOptions img 
+#mainOptions img:not(:last-child) 
 {
     position: relative;
     margin-left: 371px;
@@ -49,6 +49,16 @@ body {
     top: 26px;
     border:1px solid #c3c3c3;
     border-radius:50%;
+}
+#mainOptions img:last-child 
+{
+    position: relative;
+    margin-left: 10px;
+    width: 8px;
+    height: 4px;
+    top: 50%;
+    transform: translate(0%,-50%);
+  
 }
 
 #container {
@@ -62,10 +72,52 @@ body {
     margin-top: 110px;
    
 }
+
+
+#topOfContainer {
+    display: flex;
+    margin: 5px;
+    height: 60px;
+    border: 1px solid black;
+}
+
+#topOfContainer .weekProgress,
+#topOfContainer .selectProtein
+{
+    display:flex;
+    flex-direction: column;
+    margin-right:110px;
+}
+#topOfContainer .selectProtein
+{
+    margin-right:0px;
+    margin-left:110px;
+}
+#topOfContainer .weekProgress p,
+#topOfContainer .selectProtein p
+{
+    font-size: 9px;
+    color:$color-text;
+    margin:0px 1px 0px 10px;
+   
+}
+
+#topOfContainer .weekProgressChart table
+{
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: right;
+    padding:0px;
+}
+#topOfContainer .weekProgressChart img{
+    margin:-1px;
+    padding-left: 0px;
+    border:0px; 
+}
 .arrows
 {
     position: relative;
-    width:$widthOfArrow;
+    min-width:$widthOfArrow;
     height: $heightOfArrow;
     border: 1px solid rgb(192, 192, 192);
     border-radius: 5px;
@@ -77,17 +129,19 @@ body {
     height: 16px;
     position: absolute;
     top:13.5px;
-    left:$PositionOXArrow;
-    ;
+    left:50%;
+    transform: translate(-50%,0%);
 }
+#topOfContainer .numberOfWeek p
+{
 
-#topOfContainer {
-    display: flex;
-    margin: 5px;
-    height: 60px;
-    border: 1px solid black;
+   color:#ff801a;
+   font-size: 46px;
+   font-family:Helvetica;
+   margin:0px;
+   padding-left:45px;
+   padding-right:45px;
 }
-
 #tableBox {
     border-radius:2%;
     margin: 5px;
@@ -96,26 +150,26 @@ body {
     overflow-x: auto;
 }
 
-table {
+.tableCells {
     border-collapse: collapse;
     width: 100%;
     background-color: $color-bg;
 }
 
-table tr:not(:nth-child(1)):not(:nth-child(7)) {
+.tableCells tr:not(:nth-child(1)):not(:nth-child(7)) {
     border-top: 1px solid black;
 }
 
-table th,
-table td {
+.tableCells th,
+.tableCells td {
     border-right: 1px solid black;
 }
 
-table th {
+.tableCells th {
     padding: 10px;
 }
 
-table td {
+.tableCells table td {
     padding-left: 5px;
     text-align: left;
 }
@@ -150,54 +204,5 @@ table td {
 //         top:75%;
 //     }
 // }
-.Layer_154 {
-    background-image: url("Layer 154.png");
-    position: absolute;
-    left: 3px;
-    top: 7px;
-    width: 2564px;
-    height: 82px;
-    z-index: 184;
-  }
-  
-  .Layer_15 {
-    background-image: url("Layer 15.png");
-    opacity: 0.439;
-    position: absolute;
-    left: 977px;
-    top: 57px;
-    width: 25px;
-    height: 2px;
-    z-index: 185;
-  }
-  .Layer_149 {
-    background-image: url("Layer 149.png");
-    
-  
-    top: 0px;
-    width: 1px;
-    height: 79px;
-    z-index: 186;
-  }
-  .Rounded_Rectangle_2 {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(192, 192, 192);
-    border-radius: 0px;
-    background-color: rgba(255, 255, 255, 0);
-    position: absolute;
-    left: 1129px;
-    top: 113px;
-    width: 28px;
-    height: 46px;
-    z-index: 6;
-  }
-  .Arrow {
-    background-color: rgb(125, 125, 125);
-    position: absolute;
-    left: 1139px;
-    top: 129px;
- 
-    z-index: 7;
-  }
+
   
