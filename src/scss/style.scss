@@ -4,11 +4,11 @@ body {
     color: $color-text;
     display: flex;
     flex-direction: column;
+    position: relative;
     width: 100vw;
-    height: 100vh; // width: 2564px;
-    // height:1440px;
+    height: 100vh;
     margin: 0px !important;
-    padding: 0px; // overflow: hidden;
+    padding: 0px;
 }
 
 #top {
@@ -17,41 +17,58 @@ body {
     position: absolute;
     left: 0px;
     top: 0px;
-    width: 100vw;
-    height: 82px;
+    width: 100%;
+    height: 80px;
     box-shadow: 0px 1px 4px #e1e1e1;
+    position: static;
+    justify-content: center;
+    
 }
 
 #mainOptions {
     position: absolute;
     display: flex;
-    left: 144px;
-    height: 82px;
-    border-left: 1px solid #e1e1e1;
+    margin:0px 23px 0px 23px;
+    height: 80px;
+    width: 978px;
 }
 
 #mainOptions p {
-    margin-left: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
     font-size: 15px;
     font-family: "HelveticaNeueLTStd";
-    line-height: 3.286;
+    margin: 0;
 }
 
-#mainOptions img:not(:last-child) {
+#mainOptions p:nth-child(1) {
+    border-left: 1px solid #e1e1e1;
+    margin-left:120px;
+}
+
+.userPanel {
+    display: flex;
     position: relative;
-    margin-left: 371px;
+    align-items: center;
+    margin-left:440px;
+}
+
+.userPanel img:not(:last-child) {
     width: 36px;
     height: 36px;
-    top: 26px;
     border: 1px solid #c3c3c3;
     border-radius: 50%;
+    float: right;
 }
 
-#mainOptions img:last-child {
-    position: relative;
+.userPanel img:last-child {
+    position: absolute;
     margin-left: 10px;
     width: 8px;
     height: 4px;
+    right: -10%;
     top: 50%;
     transform: translate(0%, -50%);
 }
@@ -59,31 +76,31 @@ body {
 #container {
     display: flex;
     flex-direction: column;
-    position: relative;
-    align-self: center;
-    margin: 5px;
-    height: auto;
     position: absolute;
-    margin-top: 110px;
+    align-self: center;
+    width: 978px;
+    margin: 115px 22px 0px 22px;
+    height: auto;
 }
 
-#topOfContainer {
+#topOfContainer,
+.weeksAndButtons,
+    {
     display: flex;
-    margin: 5px;
     height: 60px;
-    border: 1px solid black;
+    margin: 0 auto;
 }
 
 #topOfContainer .weekProgress,
 #topOfContainer .selectProtein {
     display: flex;
     flex-direction: column;
-    margin-right: 110px;
+    margin-right: 100px;
 }
 
 #topOfContainer .selectProtein {
     margin-right: 0px;
-    margin-left: 135px;
+    margin-left: 130px;
 }
 
 #topOfContainer .weekProgress p,
@@ -108,8 +125,8 @@ body {
 
 .arrows {
     position: relative;
-    min-width: $widthOfArrow;
-    height: $heightOfArrow;
+    width: 24px;
+    height: 44px;
     border: 1px solid rgb(192, 192, 192);
     border-radius: 5px;
 }
@@ -128,12 +145,12 @@ body {
     font-size: 46px;
     font-family: Helvetica;
     margin: 0px;
-    padding-left: 45px;
-    padding-right: 45px;
+    width: 247px;
+    text-align: center;
 }
 
-.proteinOptions img {
-    padding-left: 10px;
+.proteinOptions img:not(:first-child) {
+    padding-left: 8px;
     padding-top: 10px;
 }
 
@@ -151,16 +168,36 @@ body {
     background-color: $color-bg;
 }
 
-.tableCells tr:not(:nth-child(1)):not(:nth-child(7)) {
-    border-top: 1px solid black;
+.tableCells tr td:not(:first-child) {
+    width: 126px;
+}
+
+.tableCells tr td:first-child {
+    width: 85px;
+}
+
+.tableCells tr:not(:first-child):not(:last-child):not(:last-child(2)) {
+    height: 90px;
+}
+
+.tableCells tr:nth-child(7) {
+    height: 35px;
+}
+
+.tableCells tr:first-child {
+    height: 50px;
+}
+
+.tableCells tr:last-child {
+    height: 30px;
 }
 
 .tableCells tr td:first-child,
 .tableCells tr:nth-child(8),
 .tableCells tr:nth-child(7),
 .tableCells th:nth-child(1) {
-    //background-color:#b3c304;
-    background-color: #d5d6ca;
+    background-image: url("../backgroundCells.png");
+    background-repeat: repeat;
 }
 
 .tableCells tr th:nth-child(3),
@@ -181,18 +218,19 @@ body {
 }
 
 .tableCells tr:nth-last-child(1) td,
-.tableCells tr:nth-last-child(2) td {
+.tableCells tr:nth-last-child(2) td,
+.tableCells tr:nth-child(2) td:nth-last-child(1) {
     color: $color-text;
     text-align: center;
 }
 
-// .tableCells
-// {
-//     background: 
-// }
-.tableCells th,
-.tableCells td {
-    border-right: 1px solid black;
+.tableCells th:not(:nth-child(2)),
+.tableCells td:not(:nth-child(2)) {
+    border-right: 2px solid $color-text;
+}
+
+.tableCells tr:not(:nth-child(1)):not(:nth-child(7)) {
+    border-top: 2px solid $color-text;
 }
 
 .tableCells th {
@@ -203,12 +241,9 @@ body {
 
 .tableCells td {
     padding-left: 15px;
-    padding-top: 0px;
     text-align: left;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
-    width: 125px;
-    height: 95px;
 }
 
 #footer {
@@ -216,12 +251,37 @@ body {
     column-rule-style: solid;
     column-rule-color: $color-text;
     margin-top: 55px;
+   
 }
 
 .advertisement h1 {
     margin: 0px;
+    font-family: Helvetica,Arial;
+    font-size:28px;
+    font-weight:normal;
+    color:#828282;
 }
-
+.advertisement p {
+    margin: 0px;
+    padding-top:25px;
+    font-family: Arial,Helvetica;
+    font-size:15px;
+   
+}
+.advertisement button
+{
+    display:flex;
+    width:107px;
+    height: 32px;
+    color: $color-text;
+    border:1px solid $color-text;
+    border-radius:5px;
+    background-color:#f9f9f9;
+}
+.advertisement img
+{
+    
+}
 // @media screen and (min-width:0px) and (max-width:670px)
 // {
 //     #container{
