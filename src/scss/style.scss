@@ -5,12 +5,10 @@ body {
     display: flex;
     flex-direction: column;
     width: 100vw;
-    height:100vh;
-    // width: 2564px;
+    height: 100vh; // width: 2564px;
     // height:1440px;
     margin: 0px !important;
-    padding: 0px;
-    // overflow: hidden;
+    padding: 0px; // overflow: hidden;
 }
 
 #top {
@@ -25,40 +23,37 @@ body {
 }
 
 #mainOptions {
-
     position: absolute;
     display: flex;
     left: 144px;
     height: 82px;
-    border-left:1px solid #e1e1e1;
+    border-left: 1px solid #e1e1e1;
 }
 
 #mainOptions p {
-    
     margin-left: 15px;
     font-size: 15px;
     font-family: "HelveticaNeueLTStd";
     line-height: 3.286;
 }
-#mainOptions img:not(:last-child) 
-{
+
+#mainOptions img:not(:last-child) {
     position: relative;
     margin-left: 371px;
     width: 36px;
     height: 36px;
     top: 26px;
-    border:1px solid #c3c3c3;
-    border-radius:50%;
+    border: 1px solid #c3c3c3;
+    border-radius: 50%;
 }
-#mainOptions img:last-child 
-{
+
+#mainOptions img:last-child {
     position: relative;
     margin-left: 10px;
     width: 8px;
     height: 4px;
     top: 50%;
-    transform: translate(0%,-50%);
-  
+    transform: translate(0%, -50%);
 }
 
 #container {
@@ -70,9 +65,7 @@ body {
     height: auto;
     position: absolute;
     margin-top: 110px;
-   
 }
-
 
 #topOfContainer {
     display: flex;
@@ -82,74 +75,70 @@ body {
 }
 
 #topOfContainer .weekProgress,
-#topOfContainer .selectProtein
-{
-    display:flex;
+#topOfContainer .selectProtein {
+    display: flex;
     flex-direction: column;
-    margin-right:110px;
-}
-#topOfContainer .selectProtein
-{
-    margin-right:0px;
-    margin-left:135px;
-}
-#topOfContainer .weekProgress p,
-#topOfContainer .selectProtein p
-{
-    font-size: 9px;
-    color:$color-text;
-    margin:0px 1px 0px 10px;
-   
+    margin-right: 110px;
 }
 
-#topOfContainer .weekProgressChart table
-{
+#topOfContainer .selectProtein {
+    margin-right: 0px;
+    margin-left: 135px;
+}
+
+#topOfContainer .weekProgress p,
+#topOfContainer .selectProtein p {
+    font-size: 9px;
+    color: $color-text;
+    margin: 0px 1px 0px 10px;
+}
+
+#topOfContainer .weekProgressChart table {
     border-spacing: 0;
     border-collapse: collapse;
     text-align: right;
-    padding:0px;
+    padding: 0px;
 }
-#topOfContainer .weekProgressChart img{
-    margin:-1px;
+
+#topOfContainer .weekProgressChart img {
+    margin: -1px;
     padding-left: 0px;
-    border:0px; 
+    border: 0px;
 }
-.arrows
-{
+
+.arrows {
     position: relative;
-    min-width:$widthOfArrow;
+    min-width: $widthOfArrow;
     height: $heightOfArrow;
     border: 1px solid rgb(192, 192, 192);
     border-radius: 5px;
-
 }
-.arrows img
-{
+
+.arrows img {
     width: 9px;
     height: 16px;
     position: absolute;
-    top:13.5px;
-    left:50%;
-    transform: translate(-50%,0%);
+    top: 13.5px;
+    left: 50%;
+    transform: translate(-50%, 0%);
 }
-#topOfContainer .numberOfWeek p
-{
 
-   color:#ff801a;
-   font-size: 46px;
-   font-family:Helvetica;
-   margin:0px;
-   padding-left:45px;
-   padding-right:45px;
+#topOfContainer .numberOfWeek p {
+    color: #ff801a;
+    font-size: 46px;
+    font-family: Helvetica;
+    margin: 0px;
+    padding-left: 45px;
+    padding-right: 45px;
 }
-.proteinOptions img
-{
-    padding-left:10px;
-    padding-top:10px;
-   
+
+.proteinOptions img {
+    padding-left: 10px;
+    padding-top: 10px;
 }
+
 #tableBox {
-    border-radius:2%;
+    border-radius: 2%;
     margin: 5px;
     height: auto;
     width: auto;
@@ -164,13 +153,43 @@ body {
 
 .tableCells tr:not(:nth-child(1)):not(:nth-child(7)) {
     border-top: 1px solid black;
-    
 }
-.tableCells tr td:first-child
-{
+
+.tableCells tr td:first-child,
+.tableCells tr:nth-child(8),
+.tableCells tr:nth-child(7),
+.tableCells th:nth-child(1) {
     //background-color:#b3c304;
-    background-color:#d5d6ca;
+    background-color: #d5d6ca;
 }
+
+.tableCells tr th:nth-child(3),
+.tableCells tr td:nth-child(3),
+    {
+    border-right: 2px solid #ff801a;
+    border-left: 2px solid #ff801a;
+    color: black;
+}
+
+.tableCells tr th:nth-child(3) {
+    border-top: 2px solid #ff801a;
+    color: #ff801a;
+}
+
+.tableCells tr:last-child td:nth-child(3) {
+    border-bottom: 2px solid #ff801a;
+}
+
+.tableCells tr:nth-last-child(1) td,
+.tableCells tr:nth-last-child(2) td {
+    color: $color-text;
+    text-align: center;
+}
+
+// .tableCells
+// {
+//     background: 
+// }
 .tableCells th,
 .tableCells td {
     border-right: 1px solid black;
@@ -178,31 +197,30 @@ body {
 
 .tableCells th {
     padding: 10px;
+    font-family: Helvetica, Arial;
+    color: #adbb0c;
 }
 
-.tableCells table td {
-    padding-left: 5px;
+.tableCells td {
+    padding-left: 15px;
+    padding-top: 0px;
     text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    width: 125px;
+    height: 95px;
 }
+
 #footer {
-    display: flex;
-    flex-wrap: wrap;
+    column-count: 3;
+    column-rule-style: solid;
+    column-rule-color: $color-text;
+    margin-top: 55px;
+}
+
+.advertisement h1 {
     margin: 0px;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-    width: 100%;
 }
-
-.advertisement {
-    padding: 5px;
-    width: 30%;
-}
-
-.advertisement:not(:last-child) {
-    border-right: 2px solid black;
-}
-
 
 // @media screen and (min-width:0px) and (max-width:670px)
 // {
@@ -216,5 +234,3 @@ body {
 //         top:75%;
 //     }
 // }
-
-  
