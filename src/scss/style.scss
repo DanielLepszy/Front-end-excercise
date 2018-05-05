@@ -166,6 +166,18 @@ body {
     border-collapse: collapse;
     width: 100%;
     background-color: $color-bg;
+    
+}
+.tableCells td {
+    vertical-align: top;
+    padding-left: 15px;
+    padding-top: 12px;
+    padding-right:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    position: relative;
+  
+    
 }
 
 .tableCells tr td:not(:first-child) {
@@ -198,6 +210,7 @@ body {
 .tableCells th:nth-child(1) {
     background-image: url("../backgroundCells.png");
     background-repeat: repeat;
+    vertical-align: middle;
 }
 
 .tableCells tr th:nth-child(3),
@@ -239,13 +252,25 @@ body {
     color: #adbb0c;
 }
 
-.tableCells td {
-    padding-left: 15px;
-    text-align: left;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+.tableCells .vectorObject
+{
+    position: absolute;
+    top: 8px;
+    right: 7px;
 }
-
+.tableCells .shakesPicture
+{
+    position: relative;
+    margin-bottom: -4px;
+    margin-top:10px;
+   
+}
+.tableCells td[rowspan="2"],
+.tableCells td[rowspan="5"]
+{
+   
+    vertical-align : middle;
+}
 #footer {
     column-count: 3;
     column-rule-style: solid;
@@ -264,24 +289,41 @@ body {
 .advertisement p {
     margin: 0px;
     padding-top:25px;
+    padding-bottom:20px;
     font-family: Arial,Helvetica;
     font-size:15px;
-   
 }
 .advertisement button
 {
     display:flex;
-    width:107px;
+    align-items: center;
     height: 32px;
     color: $color-text;
     border:1px solid $color-text;
     border-radius:5px;
     background-color:#f9f9f9;
+    margin-right: 10px;
+    font-size:16px;
+    
+}
+.advertisement .buttons
+{
+    display:flex;
+    align-items: center;
 }
 .advertisement img
 {
-    
+   margin:0px 5px 0px 5px;
+   padding-bottom:3px;
+   padding-left:2px;
 }
+.advertisement .rightArrow
+{
+    padding-right:5px;
+    padding-left:5px;
+    padding-top:3px;
+}
+
 // @media screen and (min-width:0px) and (max-width:670px)
 // {
 //     #container{
