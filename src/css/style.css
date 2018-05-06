@@ -29,33 +29,50 @@ body {
   position: static;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  -webkit-transition: .5s;
+  transition: .5s; }
 
 #mainOptions {
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0px 23px 0px 23px;
+  margin: 0px 23px 0px 123px;
   height: 80px;
-  width: 978px; }
+  width: 978px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-left: 1px solid #e1e1e1; }
 
 #mainOptions p {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  font-weight: bold;
   padding-left: 15px;
   font-size: 15px;
-  font-family: "HelveticaNeueLTStd";
+  height: 25px;
+  font-family: Helvetica, Arial;
   margin: 0; }
 
-#mainOptions p:nth-child(1) {
-  border-left: 1px solid #e1e1e1;
-  margin-left: 120px; }
+#mainOptions p:hover {
+  cursor: pointer;
+  color: #ff801a; }
+
+#mainOptions p:hover:before {
+  position: absolute;
+  content: '';
+  width: 30%;
+  height: 2px;
+  top: 100%;
+  left: 40%;
+  border-radius: 2px;
+  background: #ff801a;
+  -webkit-transition: .5s;
+  transition: .5s; }
 
 .userPanel {
   display: -webkit-box;
@@ -65,14 +82,14 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 440px; }
+  margin-left: 420px; }
 
 .userPanel img:not(:last-child) {
   width: 36px;
   height: 36px;
-  border: 1px solid #c3c3c3;
   border-radius: 50%;
-  float: right; }
+  -webkit-box-shadow: 0px 1px 2px 1px;
+          box-shadow: 0px 1px 2px 1px; }
 
 .userPanel img:last-child {
   position: absolute;
@@ -192,7 +209,10 @@ body {
   width: 126px; }
 
 .tableCells tr td:first-child {
-  width: 85px; }
+  width: 90px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  white-space: nowrap; }
 
 .tableCells tr:not(:first-child):not(:last-child):not(:last-child(2)) {
   height: 90px; }
