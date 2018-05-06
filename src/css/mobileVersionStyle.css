@@ -1,0 +1,64 @@
+@media screen and (min-width: 768px) and (max-width: 1086px) {
+  #mainOptions {
+    width: 622px; }
+  .userPanel {
+    margin-left: 150px; } }
+
+@media screen and (min-width: 580px) and (max-width: 767px) {
+  #mainOptions {
+    width: 622px; }
+  .userPanel {
+    margin-left: 30px; } }
+
+@media screen and (min-width: 320px) and (max-width: 579px) {
+  .userPanel {
+    margin-left: 10px; }
+  #mainOptions {
+    width: auto;
+    padding-left: 0px;
+    margin: 0 auto; }
+  #mainOptions p {
+    font-size: 10px;
+    padding-left: 10px; }
+  #topOfContainer .numberOfWeek p {
+    width: auto; }
+  .tableCells tr th:first-child,
+  .tableCells tr td:first-child {
+    padding: 0px;
+    padding-left: 5px; }
+  .advertisement {
+    border-bottom: 1px solid #9d9d9d;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+    width: auto; }
+  .advertisement button {
+    margin: 0 auto; }
+  #footer {
+    -webkit-column-count: 1;
+            column-count: 1;
+    margin-top: 55px; } }
+
+@media screen and (min-width: 320px) and (max-width: 1024px) {
+  #container {
+    width: 100vw;
+    margin: 115px 5px 0px 5px; }
+  #topOfContainer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: auto;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    width: inherit; }
+  #topOfContainer .weekProgress,
+  #topOfContainer .selectProtein,
+  #topOfContainer .weeksAndButtons {
+    margin: 10px auto; }
+  #topOfContainer .weekProgress p,
+  #topOfContainer .selectProtein p {
+    text-align: center; }
+  .advertisement .buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; } }
