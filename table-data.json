@@ -19,8 +19,6 @@
     "hours": [
       
         {"hour":"6:00 AM"},
-        {"hour":"7:00 AM"},
-        {"hour":"8:00 AM"},
         {"hour":"9:00 AM"},
         {"hour":"12:00 PM"},
         {"hour":"3:00 PM"},       
