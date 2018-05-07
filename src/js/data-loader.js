@@ -1,6 +1,6 @@
 const loadJSON = () => {
     var value = $.ajax({
-        url: 'https://rawgit.com/DanielLepszy/Front-end-excercise/work/table-data.json',
+        url: 'https://raw.githack.com/DanielLepszy/Front-end-excercise/work/table-data.json',
         async: false // 
     }).responseText;
     return JSON.parse(value);
@@ -66,5 +66,5 @@ const renderPage = () => {
     setProteinImages();
     setWeekProgressImages();
     setHoursOnTheTable();
-    setDishesToTheTable();
+    
 }
