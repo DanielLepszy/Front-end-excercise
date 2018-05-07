@@ -54,10 +54,17 @@ const setHoursOnTheTable = () => {
 
 }
 const setDishesToTheTable = () => {
-    const getProperRow  = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr');
+    const breakfastRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[1].getElementsByTagName('td')
+    const secondBreakfastRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[2].getElementsByTagName('td')
+    const dinnerRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[3].getElementsByTagName('td')
+    const dessertRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[4].getElementsByTagName('td')
+    const supperRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[5].getElementsByTagName('td')
+
+    breakfastRow[1].innerHTML=data.weeks[0].day[0].dishes.breakfast
 }
 const renderPage = () => {
     setProteinImages();
     setWeekProgressImages();
     setHoursOnTheTable();
+    setDishesToTheTable();
 }
