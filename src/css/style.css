@@ -1,0 +1,193 @@
+body {
+  background-color: #f9f9f9;
+  color: #9d9d9d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: 0px !important;
+  padding: 0px; }
+
+#container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 978px;
+  margin: 115px 22px 0px 22px;
+  height: auto; }
+
+#topOfContainer,
+.weeksAndButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  margin: 0 auto; }
+
+#topOfContainer .weekProgress,
+#topOfContainer .selectProtein {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 100px; }
+
+#topOfContainer .selectProtein {
+  margin-right: 0px;
+  margin-left: 130px; }
+
+#topOfContainer .weekProgress p,
+#topOfContainer .selectProtein p {
+  font-size: 9px;
+  color: #9d9d9d;
+  margin: 0px 1px 0px 10px; }
+
+#topOfContainer .weekProgressChart table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: right;
+  padding: 0px; }
+
+#topOfContainer .weekProgressChart img {
+  margin: -1px;
+  padding-left: 0px;
+  border: 0px; }
+
+.arrows {
+  position: relative;
+  width: 24px;
+  height: 44px;
+  border: 1px solid silver;
+  border-radius: 5px; }
+
+.arrows img {
+  width: 9px;
+  height: 16px;
+  position: absolute;
+  top: 13.5px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%); }
+
+#topOfContainer .numberOfWeek p {
+  color: #ff801a;
+  font-size: 46px;
+  font-family: Helvetica;
+  margin: 0px;
+  width: 247px;
+  text-align: center; }
+
+.proteinOptions img:not(:first-child) {
+  padding-left: 8px;
+  padding-top: 10px; }
+
+#tableBox {
+  border-radius: 2%;
+  margin: 5px;
+  height: auto;
+  width: auto;
+  overflow-x: auto; }
+
+.tableCells {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #ffffff; }
+
+.tableCells td {
+  vertical-align: top;
+  padding-left: 15px;
+  padding-top: 12px;
+  padding-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  position: relative; }
+
+.tableCells tr td:not(:first-child) {
+  width: 126px; }
+
+.tableCells tr td:first-child {
+  width: 90px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  white-space: nowrap; }
+
+.tableCells tr:not(:first-child):not(:last-child):not(:last-child(2)) {
+  height: 90px; }
+
+.tableCells tr:nth-child(7) {
+  height: 35px; }
+
+.tableCells tr:first-child {
+  height: 50px; }
+
+.tableCells tr:last-child {
+  height: 30px; }
+
+.tableCells tr td:first-child,
+.tableCells tr:nth-child(8),
+.tableCells tr:nth-child(7),
+.tableCells th:nth-child(1) {
+  background-image: url("../backgroundCells.png");
+  background-repeat: repeat;
+  vertical-align: middle; }
+
+.tableCells tr th:nth-child(3),
+.tableCells tr td:nth-child(3) {
+  border-right: 2px solid #ff801a;
+  border-left: 2px solid #ff801a;
+  color: black; }
+
+.tableCells tr th:nth-child(3) {
+  border-top: 2px solid #ff801a;
+  color: #ff801a; }
+
+.tableCells tr:last-child td:nth-child(3) {
+  border-bottom: 2px solid #ff801a; }
+
+.tableCells tr:nth-last-child(1) td,
+.tableCells tr:nth-last-child(2) td,
+.tableCells tr:nth-child(2) td:nth-last-child(1) {
+  color: #9d9d9d;
+  text-align: center; }
+
+.tableCells th:not(:nth-child(2)),
+.tableCells td:not(:nth-child(2)) {
+  border-right: 2px solid #9d9d9d; }
+
+.tableCells tr:not(:nth-child(1)):not(:nth-child(7)) {
+  border-top: 2px solid #9d9d9d; }
+
+.tableCells th {
+  padding: 10px;
+  font-family: Helvetica, Arial;
+  color: #adbb0c; }
+
+.tableCells .vectorObject {
+  position: absolute;
+  top: 8px;
+  right: 7px; }
+
+.tableCells .shakesPicture {
+  position: relative;
+  margin-bottom: -4px;
+  margin-top: 10px; }
+
+.tableCells td[rowspan="2"],
+.tableCells td[rowspan="5"] {
+  vertical-align: middle; }

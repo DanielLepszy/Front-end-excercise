@@ -1,0 +1,84 @@
+#topOfContainer,
+.weeksAndButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
+  margin: 0 auto;
+  -webkit-transition: .5s;
+  transition: .5s; }
+
+#topOfContainer .weekProgress,
+#topOfContainer .selectProtein {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-right: 100px; }
+
+#topOfContainer .selectProtein {
+  margin-right: 10px;
+  margin-left: 110px; }
+
+#topOfContainer .weekProgress p,
+#topOfContainer .selectProtein p {
+  font-size: 9px;
+  color: #9d9d9d;
+  margin: 0px 1px 0px 8px; }
+
+#topOfContainer .weekProgressChart table {
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-align: right;
+  padding: 0px; }
+
+#topOfContainer .weekProgressChart img {
+  margin: -1px;
+  padding-left: 0px;
+  border: 0px; }
+
+.arrows {
+  position: relative;
+  width: 24px;
+  height: 44px;
+  border: 1px solid silver;
+  border-radius: 5px; }
+
+.arrows:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 1px solid #ff801a;
+  background: #ffc506; }
+
+.arrows:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .1s;
+  transition: .1s; }
+
+.arrows img {
+  width: 9px;
+  height: 16px;
+  position: absolute;
+  top: 13.5px;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0%);
+          transform: translate(-50%, 0%); }
+
+#topOfContainer .numberOfWeek p {
+  color: #ff801a;
+  font-size: 46px;
+  font-family: Helvetica;
+  margin: 0px;
+  width: 247px;
+  text-align: center; }
+
+.proteinOptions img:not(:first-child) {
+  padding-left: 8px;
+  padding-top: 10px; }

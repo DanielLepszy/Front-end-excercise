@@ -1,0 +1,87 @@
+@import "_settings";
+#topOfContainer,
+.weeksAndButtons,
+    {
+    display: flex;
+    height: 60px;
+    margin: 0 auto;
+    transition: .5s;
+}
+
+#topOfContainer .weekProgress,
+#topOfContainer .selectProtein {
+    display: flex;
+    flex-direction: column;
+    margin-right: 100px;
+    
+}
+
+#topOfContainer .selectProtein {
+    margin-right: 10px;
+    margin-left: 110px;
+}
+
+#topOfContainer .weekProgress p,
+#topOfContainer .selectProtein p {
+    font-size: 9px;
+    color: $color-text;
+    margin: 0px 1px 0px 8px;
+}
+
+#topOfContainer .weekProgressChart table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    text-align: right;
+    padding: 0px;
+}
+
+#topOfContainer .weekProgressChart img {
+    margin: -1px;
+    padding-left: 0px;
+    border: 0px;
+}
+
+.arrows {
+    position: relative;
+    width: 24px;
+    height: 44px;
+    border: 1px solid rgb(192, 192, 192);
+    border-radius: 5px;
+}
+.arrows:hover,
+ {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .5s;
+    border:1px solid #ff801a;
+    background:#ffc506;
+   
+}
+.arrows:active
+{
+    transform: scale(1);
+    transition: .1s;
+}
+.arrows img {
+    width: 9px;
+    height: 16px;
+    position: absolute;
+    top: 13.5px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+
+#topOfContainer .numberOfWeek p {
+    color: #ff801a;
+    font-size: 46px;
+    font-family: Helvetica;
+    margin: 0px;
+    width: 247px;
+    text-align: center;
+    
+}
+
+.proteinOptions img:not(:first-child) {
+    padding-left: 8px;
+    padding-top: 10px;
+}
