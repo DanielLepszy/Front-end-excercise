@@ -42,7 +42,7 @@
         {"hour":"10:00 PM"},
         {"hour":"11:00 PM"}
     ],
-    "Weeks":[
+    "weeks":[
         
         {"NumberOfWeek":"Week 1","Day":[
             {"NumberOfDay":"DAY 1","Dishes":[
@@ -275,14 +275,4 @@
          ]}
         
     ]
-    // "dishes":
-    // [
-    //     { "type":"Bod•ē Shake", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/GrayLayer18.png"},
-    //     { "type":"Turkey Melt"},
-    //     { "type":"Ham and Swoss Roll Ups"},
-    //     { "type":"Grilled steak (HC)"},
-    //     { "type":"Bod-e Burn and Whole-Wheat English Muffin with Butter Spray"},
-    //     { "type":"Bod-e Burn with Mozzarella and Tomato Slices"},
-    //     { "type":"Garlic Lime Chicken (HC)"}
-    // ] 
 }
