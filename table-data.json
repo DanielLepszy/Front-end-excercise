@@ -17,6 +17,7 @@
         {"id":"grayCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/grayCircle.png"}
     ],
     "hours": [
+        {"hour":"00:00 AM"},
         {"hour":"1:00 AM"},
         {"hour":"2:00 AM"},
         {"hour":"3:00 AM"},
@@ -39,18 +40,249 @@
         {"hour":"8:00 PM"},
         {"hour":"9:00 PM"},
         {"hour":"10:00 PM"},
-        {"hour":"11:00 PM"},
-        {"hour":"12:00 PM"}
-
+        {"hour":"11:00 PM"}
     ],
-    "dishes":
-    [
-        { "type":"Bod•ē Shake", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/GrayLayer18.png"},
-        { "type":"Turkey Melt"},
-        { "type":"Ham and Swoss Roll Ups"},
-        { "type":"Grilled steak (HC)"},
-        { "type":"Bod-e Burn and Whole-Wheat English Muffin with Butter Spray"},
-        { "type":"Bod-e Burn with Mozzarella and Tomato Slices"},
-        { "type":"Garlic Lime Chicken (HC)"}
-    ] 
+    "Weeks":[
+        
+        {"NumberOfWeek":"Week 1","Day":[
+            {"NumberOfDay":"DAY 1","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Turkey Melt"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 2","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Turkey Melt"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 3","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Grilled steak (HC)"},
+                {"dinner":"Bod•ē Shake"},
+                {"dessert":"Bod-e Burn and Whole-Wheat English Muffin with Butter Spray"},
+                {"supper":"Garlic Lime Chicken (HC)"},
+                {"carbs":"HIGH-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 4","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Turkey Melt"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 5","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Bod•ē Shake"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 6","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Bod•ē Shake"},
+                {"dessert":"Bod-e Burn and Whole-Wheat English Muffin with Butter Spray"},
+                {"supper":"Garlic Lime Chicken (HC)"},
+                {"carbs":"HIGH-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 7","Dishes":[
+                {"breakfast":""},
+                {"secondBreakfast":""},
+                {"dinner":""},
+                {"dessert":""},
+                {"supper":""}
+            ]}
+         ]},
+
+        {"NumberOfWeek":"Week 2","Day":[
+            {"NumberOfDay":"DAY 1","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Turkey Melt"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 2","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Turkey Melt"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 3","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Grilled steak (HC)"},
+                {"dinner":"Bod•ē Shake"},
+                {"dessert":"Bod-e Burn and Whole-Wheat English Muffin with Butter Spray"},
+                {"supper":"Garlic Lime Chicken (HC)"},
+                {"carbs":"HIGH-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 4","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Turkey Melt"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 5","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Bod•ē Shake"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 6","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Bod•ē Shake"},
+                {"dessert":"Bod-e Burn and Whole-Wheat English Muffin with Butter Spray"},
+                {"supper":"Garlic Lime Chicken (HC)"},
+                {"carbs":"HIGH-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 7","Dishes":[
+                {"breakfast":""},
+                {"secondBreakfast":""},
+                {"dinner":""},
+                {"dessert":""},
+                {"supper":""}
+            ]}
+         ]},
+        {"NumberOfWeek":"Week 3","Day":[
+            {"NumberOfDay":"DAY 1","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Turkey Melt"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 2","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Turkey Melt"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 3","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Grilled steak (HC)"},
+                {"dinner":"Bod•ē Shake"},
+                {"dessert":"Bod-e Burn and Whole-Wheat English Muffin with Butter Spray"},
+                {"supper":"Garlic Lime Chicken (HC)"},
+                {"carbs":"HIGH-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 4","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Turkey Melt"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 5","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Bod•ē Shake"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 6","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Bod•ē Shake"},
+                {"dessert":"Bod-e Burn and Whole-Wheat English Muffin with Butter Spray"},
+                {"supper":"Garlic Lime Chicken (HC)"},
+                {"carbs":"HIGH-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 7","Dishes":[
+                {"breakfast":""},
+                {"secondBreakfast":""},
+                {"dinner":""},
+                {"dessert":""},
+                {"supper":""}
+            ]}
+         ]},
+         {"NumberOfWeek":"Week 4","Day":[
+           {"NumberOfDay":"DAY 1","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Turkey Melt"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 2","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Turkey Melt"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 3","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Grilled steak (HC)"},
+                {"dinner":"Bod•ē Shake"},
+                {"dessert":"Bod-e Burn and Whole-Wheat English Muffin with Butter Spray"},
+                {"supper":"Garlic Lime Chicken (HC)"},
+                {"carbs":"HIGH-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 4","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Turkey Melt"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 5","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Bod•ē Shake"},
+                {"dessert":"Bod-e Burn with Mozzarella and Tomato Slices"},
+                {"supper":"Turkey Melt"},
+                {"carbs":"LOW-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 6","Dishes":[
+                {"breakfast":"Bod•ē Shake"},
+                {"secondBreakfast":"Ham and Swoss Roll Ups"},
+                {"dinner":"Bod•ē Shake"},
+                {"dessert":"Bod-e Burn and Whole-Wheat English Muffin with Butter Spray"},
+                {"supper":"Garlic Lime Chicken (HC)"},
+                {"carbs":"HIGH-CARB"}
+            ]},
+            {"NumberOfDay":"DAY 7","Dishes":[
+                {"breakfast":""},
+                {"secondBreakfast":""},
+                {"dinner":""},
+                {"dessert":""},
+                {"supper":""}
+            ]}
+         ]}
+        
+    ]
+    // "dishes":
+    // [
+    //     { "type":"Bod•ē Shake", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/GrayLayer18.png"},
+    //     { "type":"Turkey Melt"},
+    //     { "type":"Ham and Swoss Roll Ups"},
+    //     { "type":"Grilled steak (HC)"},
+    //     { "type":"Bod-e Burn and Whole-Wheat English Muffin with Butter Spray"},
+    //     { "type":"Bod-e Burn with Mozzarella and Tomato Slices"},
+    //     { "type":"Garlic Lime Chicken (HC)"}
+    // ] 
 }

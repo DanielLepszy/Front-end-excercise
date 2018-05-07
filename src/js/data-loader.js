@@ -1,6 +1,6 @@
 const loadJSON = () => {
     var value = $.ajax({
-        url: 'https://cdn.rawgit.com/DanielLepszy/Front-end-excercise/work/table-data.json',
+        url: 'https://rawgit.com/DanielLepszy/Front-end-excercise/work/table-data.json',
         async: false // 
     }).responseText;
     return JSON.parse(value);
@@ -46,15 +46,15 @@ const setWeekProgressImages = () => {
 }
 const setHoursOnTheTable = () => {
     const getProperRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr');
-  getProperRow[1].getElementsByTagName('td')[0].innerHTML  = data.hours[6];
-  getProperRow[2].getElementsByTagName('td')[0].innerHTML  = data.hours[9];
-  getProperRow[3].getElementsByTagName('td')[0].innerHTML  = data.hours[12];
-  getProperRow[4].getElementsByTagName('td')[0].innerHTML  = data.hours[15];
-  getProperRow[5].getElementsByTagName('td')[0].innerHTML  = data.hours[18];
+  getProperRow[1].getElementsByTagName('td')[0].innerHTML  = data.hours[6].hour;
+  getProperRow[2].getElementsByTagName('td')[0].innerHTML  = data.hours[9].hour;
+  getProperRow[3].getElementsByTagName('td')[0].innerHTML  = data.hours[12].hour;
+  getProperRow[4].getElementsByTagName('td')[0].innerHTML  = data.hours[15].hour;
+  getProperRow[5].getElementsByTagName('td')[0].innerHTML  = data.hours[18].hour;
 
 }
 const setDishesToTheTable = () => {
-
+    const getProperRow  = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr');
 }
 const renderPage = () => {
     setProteinImages();
