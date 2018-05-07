@@ -5,12 +5,12 @@ const getContentFromPage = () => {
 }
 
 const incrementContent = (x) => {
-    var currentNumberOfWeek = getContentFromPage();
+    var currentContentOfWeek = getContentFromPage();
 
-    if (currentNumberOfWeek !== sliderContent[(sliderContent.length - 1)]) {
+    if (currentContentOfWeek !== sliderContent[(sliderContent.length - 1)]) {
         document.getElementsByClassName("arrows")[0].style.opacity = "1";
         var i = 0;
-        while (currentNumberOfWeek !== sliderContent[i]) {
+        while (currentContentOfWeek !== sliderContent[i]) {
             i++
         }
 
@@ -23,11 +23,11 @@ const incrementContent = (x) => {
 }
 
 const decrementContent = (x) => {
-    var currentNumberOfWeek = getContentFromPage();
-    if (currentNumberOfWeek !== sliderContent[0]) {
+    var currentContentOfWeek = getContentFromPage();
+    if (currentContentOfWeek !== sliderContent[0]) {
         document.getElementsByClassName("arrows")[1].style.opacity = "1";
         var i = 0;
-        while (currentNumberOfWeek !== sliderContent[i]) {
+        while (currentContentOfWeek !== sliderContent[i]) {
             i++
         }
         document.getElementsByClassName("getWeek")[0].innerHTML = sliderContent[i - 1]
