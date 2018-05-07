@@ -47,11 +47,11 @@ const setWeekProgressImages = () => {
 const setHoursAndDaysOnTheTable = () => {
     const getProperRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr');
 
-    getProperRow[1].getElementsByTagName('td')[0].innerHTML = data.hours[6].hour;
-    getProperRow[2].getElementsByTagName('td')[0].innerHTML = data.hours[9].hour;
-    getProperRow[3].getElementsByTagName('td')[0].innerHTML = data.hours[12].hour;
-    getProperRow[4].getElementsByTagName('td')[0].innerHTML = data.hours[15].hour;
-    getProperRow[5].getElementsByTagName('td')[0].innerHTML = data.hours[18].hour;
+    getProperRow[1].getElementsByTagName('td')[0].innerHTML = data.hours[0].hour;
+    getProperRow[2].getElementsByTagName('td')[0].innerHTML = data.hours[1].hour;
+    getProperRow[3].getElementsByTagName('td')[0].innerHTML = data.hours[2].hour;
+    getProperRow[4].getElementsByTagName('td')[0].innerHTML = data.hours[3].hour;
+    getProperRow[5].getElementsByTagName('td')[0].innerHTML = data.hours[4].hour;
 
     getProperRow[0].getElementsByTagName('th')[1].innerHTML = data.weeks[0].Day[0].NumberOfDay
     getProperRow[0].getElementsByTagName('th')[2].innerHTML = data.weeks[0].Day[1].NumberOfDay
