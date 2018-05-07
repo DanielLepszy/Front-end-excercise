@@ -4,7 +4,9 @@
   display: -ms-flexbox;
   display: flex;
   height: 60px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  -webkit-transition: .5s;
+  transition: .5s; }
 
 #topOfContainer .weekProgress,
 #topOfContainer .selectProtein {
@@ -44,6 +46,21 @@
   height: 44px;
   border: 1px solid silver;
   border-radius: 5px; }
+
+.arrows:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 1px solid #ff801a;
+  background: #ffc506; }
+
+.arrows:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .1s;
+  transition: .1s; }
 
 .arrows img {
   width: 9px;

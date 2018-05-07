@@ -15,5 +15,15 @@
         {"id":"greenCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/Circle.png"},
         {"id":"emptyCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/emptyCircle.png"},
         {"id":"grayCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/grayCircle.png"}
-    ]
+    ],
+    "dishes":
+    [
+        { "type":"Bod•ē Shake", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/GrayLayer18.png"},
+        { "type":"Turkey Melt"},
+        { "type":"Ham and Swoss Roll Ups"},
+        { "type":"Grilled steak (HC)"},
+        { "type":"Bod-e Burn and Whole-Wheat English Muffin with Butter Spray"},
+        { "type":"Bod-e Burn with Mozzarella and Tomato Slices"},
+        { "type":"Garlic Lime Chicken (HC)"}
+    ] 
 }

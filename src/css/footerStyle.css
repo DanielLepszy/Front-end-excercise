@@ -57,3 +57,18 @@
   padding-right: 5px;
   padding-left: 5px;
   padding-top: 3px; }
+
+.advertisement button:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: .5s;
+  transition: .5s;
+  border: 2px solid #ff801a;
+  color: #ff801a; }
+
+.advertisement button:active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .1s;
+  transition: .1s; }

@@ -5,6 +5,7 @@
     display: flex;
     height: 60px;
     margin: 0 auto;
+    transition: .5s;
 }
 
 #topOfContainer .weekProgress,
@@ -12,6 +13,7 @@
     display: flex;
     flex-direction: column;
     margin-right: 100px;
+    
 }
 
 #topOfContainer .selectProtein {
@@ -46,7 +48,20 @@
     border: 1px solid rgb(192, 192, 192);
     border-radius: 5px;
 }
-
+.arrows:hover,
+ {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .5s;
+    border:1px solid #ff801a;
+    background:#ffc506;
+   
+}
+.arrows:active
+{
+    transform: scale(1);
+    transition: .1s;
+}
 .arrows img {
     width: 9px;
     height: 16px;
@@ -63,6 +78,7 @@
     margin: 0px;
     width: 247px;
     text-align: center;
+    
 }
 
 .proteinOptions img:not(:first-child) {
