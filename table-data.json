@@ -16,6 +16,33 @@
         {"id":"emptyCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/emptyCircle.png"},
         {"id":"grayCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/grayCircle.png"}
     ],
+    "hours": [
+        {"hour":"1:00 AM"},
+        {"hour":"2:00 AM"},
+        {"hour":"3:00 AM"},
+        {"hour":"4:00 AM"},
+        {"hour":"5:00 AM"},
+        {"hour":"6:00 AM"},
+        {"hour":"7:00 AM"},
+        {"hour":"8:00 AM"},
+        {"hour":"9:00 AM"},
+        {"hour":"10:00 AM"},
+        {"hour":"11:00 AM"},
+        {"hour":"12:00 PM"},
+        {"hour":"1:00 PM"},
+        {"hour":"2:00 PM"},
+        {"hour":"3:00 PM"},
+        {"hour":"4:00 PM"},
+        {"hour":"5:00 PM"},
+        {"hour":"6:00 PM"},
+        {"hour":"7:00 PM"},
+        {"hour":"8:00 PM"},
+        {"hour":"9:00 PM"},
+        {"hour":"10:00 PM"},
+        {"hour":"11:00 PM"},
+        {"hour":"12:00 PM"}
+
+    ],
     "dishes":
     [
         { "type":"Bod•ē Shake", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/GrayLayer18.png"},
