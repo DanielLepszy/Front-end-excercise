@@ -118,11 +118,11 @@ const setLevelOfCarbs = () => {
 }
 const setDumbellImages = () => {
     const DumbellImages =  document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[6].getElementsByTagName('td')
-    proteinImages[1].src = data.dumbells[0].orangeDumbell;
-    proteinImages[2].src = data.dumbells[0].orangeDumbell;
-    proteinImages[3].src = data.dumbells[0].grayDumbell;
-    proteinImages[4].src = data.dumbells[0].grayDumbell;
-    proteinImages[5].src = data.dumbells[0].grayDumbell;
+    proteinImages[1].src = data.dumbells[0].src;
+    proteinImages[2].src = data.dumbells[0].src;
+    proteinImages[3].src = data.dumbells[1].src;
+    proteinImages[4].src = data.dumbells[1].src;
+    proteinImages[5].src = data.dumbells[1].src;
 }
 const renderPage = () => {
     setProteinImages();
