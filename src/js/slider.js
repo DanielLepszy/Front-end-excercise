@@ -4,7 +4,7 @@ const getContentFromPage = () => {
     return document.getElementsByClassName("getWeek")[0].innerHTML;
 }
 
-const incrementNumberOfWeek = (x) => {
+const incrementContent = (x) => {
     var currentNumberOfWeek = getContentFromPage();
 
     if (currentNumberOfWeek !== sliderContent[(sliderContent.length - 1)]) {
@@ -22,7 +22,7 @@ const incrementNumberOfWeek = (x) => {
 
 }
 
-const decrementNumberOfWeek = (x) => {
+const decrementContent = (x) => {
     var currentNumberOfWeek = getContentFromPage();
     if (currentNumberOfWeek !== sliderContent[0]) {
         document.getElementsByClassName("arrows")[1].style.opacity = "1";
