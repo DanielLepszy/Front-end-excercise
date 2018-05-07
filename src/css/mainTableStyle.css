@@ -19,6 +19,9 @@
   font-size: 13px;
   position: relative; }
 
+.tableCells td p {
+  margin: 0px; }
+
 .tableCells tr td:not(:first-child) {
   width: 126px; }
 
