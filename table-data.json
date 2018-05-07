@@ -16,6 +16,10 @@
         {"id":"emptyCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/emptyCircle.png"},
         {"id":"grayCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/grayCircle.png"}
     ],
+    "dumbells" : [
+        {"id":"grayDumbell", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/grayDumbell.png"},
+        {"id":"orangeDumbell", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/orangeDumbell.png"}
+    ],
     "hours": [
       
         {"hour":"6:00 AM"},

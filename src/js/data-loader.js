@@ -116,6 +116,14 @@ const setLevelOfCarbs = () => {
     carbsRow[5].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[4].Dishes[5].carbs
     carbsRow[6].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[5].Dishes[5].carbs
 }
+const setDumbellImages = () => {
+    const DumbellImages =  document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[6].getElementsByTagName('td')
+    proteinImages[1].src = data.dumbells[0].orangeDumbell;
+    proteinImages[2].src = data.dumbells[0].orangeDumbell;
+    proteinImages[3].src = data.dumbells[0].grayDumbell;
+    proteinImages[4].src = data.dumbells[0].grayDumbell;
+    proteinImages[5].src = data.dumbells[0].grayDumbell;
+}
 const renderPage = () => {
     setProteinImages();
     setWeekProgressImages();
