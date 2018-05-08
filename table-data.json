@@ -9,7 +9,7 @@
         {"id":"non-broccoli", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/non-broccoli.png"},
         {"id":"non-meat", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/non-meat.png"},
         {"id":"non-fish", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/non-fish.png"},
-        {"id":"non-chicken", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/non-meat.png"}
+        {"id":"non-chicken", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/non-chicken.png"}
     ],
     "weekProgress" : [
         {"id":"greenCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/Circle.png"},
