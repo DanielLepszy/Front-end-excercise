@@ -6,14 +6,14 @@ const loadJSON = () => {
     return JSON.parse(value);
 }
 const data = loadJSON();
-const setProteinImages = () => {
-    const proteinImages = document.getElementsByClassName("proteinOptions")[0].getElementsByTagName('img')
-    proteinImages[0].src = data.selectedProtein[0].src;
-    proteinImages[1].src = data.selectedProtein[1].src;
-    proteinImages[2].src = data.selectedProtein[2].src;
-    proteinImages[3].src = data.selectedProtein[8].src;
-    proteinImages[4].src = data.selectedProtein[9].src;
-}
+// const setProteinImages = () => {
+//     const proteinImages = document.getElementsByClassName("proteinOptions")[0].getElementsByTagName('img')
+//     proteinImages[0].src = data.selectedProtein[0].src;
+//     proteinImages[1].src = data.selectedProtein[1].src;
+//     proteinImages[2].src = data.selectedProtein[2].src;
+//     proteinImages[3].src = data.selectedProtein[8].src;
+//     proteinImages[4].src = data.selectedProtein[9].src;
+// }
 const setWeekProgressImages = () => {
     const weekProgressImages = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('img')
     const numberOfWeeks = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('p');
@@ -131,11 +131,26 @@ const addContentOfHTMLElements = () =>
     addMainTableToPage();
     addFooterContentToPage();
 }
+const showProtein =() =>
+{
+    const proteinImages = document.getElementsByClassName("proteinOptions")[0].getElementsByTagName('img')
+    if(data.selected[0].cheese===true)
+    {
+        proteinImages[0].src="images/cheese.png"
+    }
+    else{    proteinImages[0].src="images/non-cheese.png"}
+    //     proteinImages[0].src = data.selectedProtein[0].src;
+    //     proteinImages[1].src = data.selectedProtein[1].src;
+    //     proteinImages[2].src = data.selectedProtein[2].src;
+    //     proteinImages[3].src = data.selectedProtein[8].src;
+    //     proteinImages[4].src = data.selectedProtein[9].src;
+    
+}
 
 const renderPage = () => {
     addContentOfHTMLElements();
-
-    setProteinImages();
+    showProtein()
+    // setProteinImages();
     setWeekProgressImages();
     setHoursAndDaysOnTheTable();
     setBreakfastToTheTable();
