@@ -69,7 +69,7 @@ const setBreakfastToTheTable = () => {
     breakfastRow[4].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[3].Dishes[0].breakfast
     breakfastRow[5].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[4].Dishes[0].breakfast
     breakfastRow[6].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[5].Dishes[0].breakfast
-   // breakfastRow[2].getElementsByTagName('img')[0].style="filter: grayscale(100%)";   
+    // breakfastRow[2].getElementsByTagName('img')[0].style="filter: grayscale(100%)";   
 }
 const setSecondBreakfastToTheTable = () => {
     const secondBreakfastRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[2].getElementsByTagName('td')
@@ -106,7 +106,7 @@ const setSupperToTheTable = () => {
     supperRow[4].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[3].Dishes[4].supper
     supperRow[5].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[4].Dishes[4].supper
     supperRow[6].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[5].Dishes[4].supper
-}    
+}
 const setLevelOfCarbs = () => {
     const carbsRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[6].getElementsByTagName('td')
     carbsRow[1].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[0].Dishes[5].carbs
@@ -117,14 +117,24 @@ const setLevelOfCarbs = () => {
     carbsRow[6].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[5].Dishes[5].carbs
 }
 const setDumbellImages = () => {
-    const DumbellImages =  document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[6].getElementsByTagName('td')
+    const DumbellImages = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[6].getElementsByTagName('td')
     proteinImages[1].src = data.dumbells[0].src;
     proteinImages[2].src = data.dumbells[0].src;
     proteinImages[3].src = data.dumbells[1].src;
     proteinImages[4].src = data.dumbells[1].src;
     proteinImages[5].src = data.dumbells[1].src;
 }
+const addContentOfHTMLElements = () =>
+{
+    addTopContentToPage();
+    addTopOfContainerToPage();
+    addMainTableToPage();
+    addFooterContentToPage();
+}
+
 const renderPage = () => {
+    addContentOfHTMLElements();
+
     setProteinImages();
     setWeekProgressImages();
     setHoursAndDaysOnTheTable();
