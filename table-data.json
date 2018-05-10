@@ -1,22 +1,11 @@
 {
+   
     "selectedProtein": [
-        {"id":"cheese", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/cheese.png"},
-        {"id":"broccoli", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/broccoli.png"},
-        {"id":"meat", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/meat.png"},
-        {"id":"fish", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/fish.png"},
-        {"id":"chicken", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/chicken.png"},
-        {"id":"non-cheese", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/non-cheese.png"},
-        {"id":"non-broccoli", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/non-broccoli.png"},
-        {"id":"non-meat", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/non-meat.png"},
-        {"id":"non-fish", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/non-fish.png"},
-        {"id":"non-chicken", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/non-chicken.png"}
-    ],
-    "selected": [
-        {"cheese":true},
-        {"broccoli":true},
-        {"meat":true},
-        {"fish":true},
-        {"chicken":true}
+        {"id":"cheese","selected":true},
+        {"id":"broccoli","selected":true},
+        {"id":"meat","selected":true},
+        {"id":"fish","selected":true},
+        {"id":"chicken","selected":true}
     ],
     "weekProgress" : [
         {"id":"greenCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/Circle.png"},

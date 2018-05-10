@@ -124,35 +124,31 @@ const setDumbellImages = () => {
     proteinImages[4].src = data.dumbells[1].src;
     proteinImages[5].src = data.dumbells[1].src;
 }
-const addContentOfHTMLElements = () =>
-{
+
+const showProtein = () => {
+    const proteinImages = document.getElementsByClassName("proteinOptions")[0].getElementsByTagName('img')
+    const sourceOfProteinsImage = ["cheese.png", "broccoli.png", "meat.png", "fish.png", "chicken.png"]
+    const sourceOfNonProteinsImage = ["non-cheese.png", "non-broccoli.png", "non-meat.png", "non-fish.png", "non-chicken.png"]
+
+    for (var i = 0; i <= data.selectedProtein.length; i++) {
+        if (data.selected[i].selected === true) {
+            proteinImages[i].src = "images/" + sourceOfProteinsImage[i];
+        } else {
+            proteinImages[i].src = "images/" + sourceOfNonProteinsImage[i];
+        }
+     
+    }
+}
+const addContentOfHTMLElements = () => {
     addTopContentToPage();
     addTopOfContainerToPage();
     addMainTableToPage();
     addFooterContentToPage();
 }
-const showProtein =() =>
-{
-    const proteinImages = document.getElementsByClassName("proteinOptions")[0].getElementsByTagName('img')
-    const sourceOfProteinsImage = ["cheese.png","broccoli.png","meat.png","fish.png","chicken.png"]
-    const sourceOfNonProteinsImage = ["non-cheese.png","non-broccoli.png","non-meat.png","non-fish.png","non-chicken.png"]
-    for(var i=0;i<=data.selected.length;i++){
-    if(data.selected[0].cheese===true)
-    {
-        proteinImages[i].src=sourceOfProteinsImage[i];
-    }
-    else{    proteinImages[i].src=sourceOfNonProteinsImage[i];}
-    //     proteinImages[0].src = data.selectedProtein[0].src;
-    //     proteinImages[1].src = data.selectedProtein[1].src;
-    //     proteinImages[2].src = data.selectedProtein[2].src;
-    //     proteinImages[3].src = data.selectedProtein[8].src;
-    //     proteinImages[4].src = data.selectedProtein[9].src;
-}
-}
 
 const renderPage = () => {
     addContentOfHTMLElements();
-    //showProtein()
+    showProtein()
     // setProteinImages();
     setWeekProgressImages();
     setHoursAndDaysOnTheTable();
