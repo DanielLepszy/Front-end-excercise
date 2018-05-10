@@ -50,7 +50,7 @@ const setWeekProgressImages = () => {
 }
 
 const setHoursAndDaysOnTheTable = () => {
-    const getProperRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr');
+    const getProperRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')
 
     getProperRow[1].getElementsByTagName('td')[0].innerHTML = data.hours[0].hour;
     getProperRow[2].getElementsByTagName('td')[0].innerHTML = data.hours[1].hour;
