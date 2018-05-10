@@ -4,8 +4,8 @@
         {"id":"cheese","selected":true},
         {"id":"broccoli","selected":true},
         {"id":"meat","selected":true},
-        {"id":"fish","selected":true},
-        {"id":"chicken","selected":true}
+        {"id":"fish","selected":false},
+        {"id":"chicken","selected":false}
     ],
     "weekProgress" : [
         {"id":"greenCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/Circle.png"},

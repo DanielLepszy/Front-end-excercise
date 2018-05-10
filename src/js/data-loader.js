@@ -130,8 +130,8 @@ const showProtein = () => {
     const sourceOfProteinsImage = ["cheese.png", "broccoli.png", "meat.png", "fish.png", "chicken.png"]
     const sourceOfNonProteinsImage = ["non-cheese.png", "non-broccoli.png", "non-meat.png", "non-fish.png", "non-chicken.png"]
 
-    for (var i = 0; i <= data.selectedProtein.length; i++) {
-        if (data.selected[i].selected === true) {
+    for (var i = 0; i < data.selectedProtein.length; i++) {
+        if (data.selectedProtein[i].selected === true) {
             proteinImages[i].src = "images/" + sourceOfProteinsImage[i];
         } else {
             proteinImages[i].src = "images/" + sourceOfNonProteinsImage[i];
