@@ -43,7 +43,7 @@ const setWeekProgressImages = () => {
             weekProgressCircleImage[i].src = "images/grayCircle.png"
         }
     }
-    for (var i = 0; i < weekNumber.length; i++) {
+    for (var i = 0; i < selectedAmountOfWeeks.length; i++) {
         weekNumber[i].innerText = (i + 1);
     }
 
@@ -121,14 +121,7 @@ const setLevelOfCarbs = () => {
     carbsRow[5].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[4].Dishes[5].carbs
     carbsRow[6].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[5].Dishes[5].carbs
 }
-// const setDumbellImages = () => {
-//     const dumbellImages = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[6].getElementsByTagName('td')
-//     proteinImages[1].src = data.dumbells[0].src;
-//     proteinImages[2].src = data.dumbells[0].src;
-//     proteinImages[3].src = data.dumbells[1].src;
-//     proteinImages[4].src = data.dumbells[1].src;
-//     proteinImages[5].src = data.dumbells[1].src;
-// }
+
 const setDumbellImages = () => {
     const dumbellImages = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[6].getElementsByTagName('td')
     for (var j = 0; j < data.weekProgress[0].amountOfSelectedWeeks; j++) {
