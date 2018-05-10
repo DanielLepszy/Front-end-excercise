@@ -22,54 +22,63 @@ const showProtein = () => {
     }
 }
 // const setWeekProgressImages = () => {
-//     const weekProgressImages = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('img')
-//     const numberOfWeeks = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('p');
-//     weekProgressImages[0].src = data.weekProgress[0].src;
-//     weekProgressImages[1].src = data.weekProgress[0].src;
-//     weekProgressImages[2].src = data.weekProgress[0].src;
-//     weekProgressImages[3].src = data.weekProgress[0].src;
-//     weekProgressImages[4].src = data.weekProgress[0].src;
-//     weekProgressImages[5].src = data.weekProgress[0].src;
-//     weekProgressImages[6].src = data.weekProgress[0].src;
-//     weekProgressImages[7].src = data.weekProgress[1].src;
-//     weekProgressImages[8].src = data.weekProgress[2].src;
-//     weekProgressImages[9].src = data.weekProgress[2].src;
-//     weekProgressImages[10].src = data.weekProgress[2].src;
-//     weekProgressImages[11].src = data.weekProgress[2].src;
+//     const weekProgressCircleImage = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('img')
+//     const selectedAmountOfWeeks = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('p');
+//     weekProgressCircleImage[0].src = data.weekProgress[0].src;
+//     weekProgressCircleImage[1].src = data.weekProgress[0].src;
+//     weekProgressCircleImage[2].src = data.weekProgress[0].src;
+//     weekProgressCircleImage[3].src = data.weekProgress[0].src;
+//     weekProgressCircleImage[4].src = data.weekProgress[0].src;
+//     weekProgressCircleImage[5].src = data.weekProgress[0].src;
+//     weekProgressCircleImage[6].src = data.weekProgress[0].src;
+//     weekProgressCircleImage[7].src = data.weekProgress[1].src;
+//     weekProgressCircleImage[8].src = data.weekProgress[2].src;
+//     weekProgressCircleImage[9].src = data.weekProgress[2].src;
+//     weekProgressCircleImage[10].src = data.weekProgress[2].src;
+//     weekProgressCircleImage[11].src = data.weekProgress[2].src;
 
-//     numberOfWeeks[0].innerText = 1;
-//     numberOfWeeks[1].innerText = 2;
-//     numberOfWeeks[2].innerText = 3;
-//     numberOfWeeks[3].innerText = 4;
-//     numberOfWeeks[4].innerText = 5;
-//     numberOfWeeks[5].innerText = 6;
-//     numberOfWeeks[6].innerText = 7;
-//     numberOfWeeks[7].innerText = 8;
-//     numberOfWeeks[8].innerText = 9;
-//     numberOfWeeks[9].innerText = 10;
-//     numberOfWeeks[10].innerText = 11;
-//     numberOfWeeks[11].innerText = 12;
+//     selectedAmountOfWeeks[0].innerText = 1;
+//     selectedAmountOfWeeks[1].innerText = 2;
+//     selectedAmountOfWeeks[2].innerText = 3;
+//     selectedAmountOfWeeks[3].innerText = 4;
+//     selectedAmountOfWeeks[4].innerText = 5;
+//     selectedAmountOfWeeks[5].innerText = 6;
+//     selectedAmountOfWeeks[6].innerText = 7;
+//     selectedAmountOfWeeks[7].innerText = 8;
+//     selectedAmountOfWeeks[8].innerText = 9;
+//     selectedAmountOfWeeks[9].innerText = 10;
+//     selectedAmountOfWeeks[10].innerText = 11;
+//     selectedAmountOfWeeks[11].innerText = 12;
 
 // }
 const setWeekProgressImages = () => {
-    const weekProgressImages = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('img')
-    const numberOfWeeks = data.weekProgress[0].amountOfSelectedWeeks
-    const currentWeek = document.getElementsByClassName("numberOfWeek")[0].getElementsByTagName("p")[0].innerHTML[5];
+    const weekProgressCircleImage = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('img')
+    const weekNumber = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('p');
+    const selectedAmountOfWeeks = setWeeksInArray();
+    const currentWeekOnTable = document.getElementsByClassName("numberOfWeek")[0].getElementsByTagName("p")[0].innerHTML;
+    var amountOfProgress;
+    for (var i = 0; i < selectedAmountOfWeeks.length; i++) {
+        if (currentWeekOnTable === selectedAmountOfWeeks[i])
+        {
+            amountOfProgress = selectedAmountOfWeeks.indexOf(selectedAmountOfWeeks[i])
+        }
+        else{}
+    }
     
-    for (var i = 0; i < numberOfWeeks; i++) {
-        if ( currentWeek > (i+1)) {
-            weekProgressImages[i].src= "images/Circle.png"
+    for (var i = 0; i < selectedAmountOfWeeks.length; i++) {
+        if ( amountOfProgress > i) {
+            weekProgressCircleImage[i].src= "images/Circle.png"
         }
-        else if (currentWeek == (i+1)){
-            weekProgressImages[i].src= "images/emptyCircle.png"
+        else if (amountOfProgress == i){
+            weekProgressCircleImage[i].src= "images/emptyCircle.png"
         }
-        else {
-            weekProgressImages[i].src= "images/grayCircle.png"
+        else if ( amountOfProgress < i) {
+            weekProgressCircleImage[i].src= "images/grayCircle.png"
         }
     }
-    for (var i = 0; i <  numberOfWeeks.length; i++)
+    for (var i = 0; i < weekNumber.length; i++)
     {
-        numberOfWeeks[i].innerText = (i+1);
+        weekNumber[i].innerText = (i+1);
     }
 
 }
