@@ -19,7 +19,7 @@ const incrementContent = (x) => {
             x.style.opacity = "0";
         }
     }
-
+    setWeekProgressImages();
 }
 
 const decrementContent = (x) => {
@@ -35,4 +35,5 @@ const decrementContent = (x) => {
             x.style.opacity = "0";
         }
     }
+    setWeekProgressImages();
 }

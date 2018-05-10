@@ -1,5 +1,4 @@
 {
-   
     "selectedProtein": [
         {"id":"cheese","selected":true},
         {"id":"broccoli","selected":true},
@@ -8,10 +7,9 @@
         {"id":"chicken","selected":false}
     ],
     "weekProgress" : [
-        {"id":"greenCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/Circle.png"},
-        {"id":"emptyCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/emptyCircle.png"},
-        {"id":"grayCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/grayCircle.png"}
+        {"amountOfSelectedWeeks":"12"}
     ],
+  
     "dumbells" : [
         {"id":"grayDumbell", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/grayDumbell.png"},
         {"id":"orangeDumbell", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/orangeDumbell.png"}
