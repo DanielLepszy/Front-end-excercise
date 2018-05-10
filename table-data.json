@@ -12,16 +12,11 @@
         {"id":"non-chicken", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/non-chicken.png"}
     ],
     "selected": [
-        {"cheese":"True", "selected":"True", "unselected":"False"},
-        {"id":"broccoli", "selected":"True"},
-        {"id":"meat", "selected":"True"},
-        {"id":"fish", "selected":"True"},
-        {"id":"chicken", "selected":"True"},
-        {"id":"non-cheese", "selected":"False"},
-        {"id":"non-broccoli", "selected":"False"},
-        {"id":"non-meat", "selected":"False"},
-        {"id":"non-fish", "selected":"False"},
-        {"id":"non-chicken", "selected":"False"}
+        {"cheese":true},
+        {"broccoli":true},
+        {"meat":true},
+        {"fish":true},
+        {"chicken":true}
     ],
     "weekProgress" : [
         {"id":"greenCircleAndLine", "src":"https://raw.githubusercontent.com/DanielLepszy/Front-end-excercise/work/src/images/Circle.png"},
