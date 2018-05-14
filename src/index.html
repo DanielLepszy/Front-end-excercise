@@ -11,203 +11,30 @@
     <link rel="stylesheet" href="css/topOfContainer.css">
     <link rel="stylesheet" href="css/mainTableStyle.css">
     <link rel="stylesheet" href="css/footerStyle.css">
-    <link rel="stylesheet" href="css/mobileVersionStyle.css">  
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link rel="stylesheet" href="css/mobileVersionStyle.css">
+    <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
 </head>
 
 <body onload="renderPage()">
 
-    <div id="top">
-        <div id="mainOptions">
-            <p>DASHBOARD</p>
-            <p>RECIPES</p>
-            <p>CHALLENGE</p>
-            <div class="userPanel">
-            <img src="images/user.png">
-            <p>UserName	&#709</p>
-            </div>
-        </div>
-    </div>
+    <div id="top"></div>
+
 
     <div id="container">
-        <div id="topOfContainer">
-            <div class="weekProgress">
-                <p>YOUR 1 WEEK PROGRESS</p>
-                <div class="weekProgressChart" >
-                    <table>
-                        <tr>
-                                
-                                <td><img></td>
-                                <td><img></td>
-                                <td><img></td>
-                                <td><img></td>
-                                <td><img></td>
-                                <td><img></td>
-                                <td><img></td>
-                                <td><img></td>
-                                <td><img></td>
-                                <td><img></td>
-                                <td><img></td>
-                                <td><img></td>
-                            </tr>
-                            <tr>
-                                    <td><p></p></td>
-                                    <td><p></p></td>
-                                    <td><p></p> </td>
-                                    <td><p></p> </td>
-                                    <td><p></p> </td>
-                                    <td><p></p> </td>
-                                    <td><p></p> </td>
-                                    <td><p></p> </td>
-                                    <td><p></p> </td>
-                                    <td><p></p> </td>
-                                    <td><p></p> </td>
-                                    <td><p></p> </td>
-                                </tr>
-           
-                            </table>
-                </div>
-               
-            </div>
-        <div class="weeksAndButtons">
-            <div class="arrows" onclick="decrementContent(this)" style="opacity:0">
-                <img src="images/LeftArrow.png">
-            </div>
-            <div class="numberOfWeek" >
-                <p class="getWeek" >Week 1</p>
-            </div>
-            <div class="arrows" onclick="incrementContent(this)">
-                <img src="images/RightArrow.png">
-            </div>
-        </div>
-            <div class="selectProtein">
-                <p>SELECT YOUR PROTEIN OPTIONS</p>
-                <div class="proteinOptions">
-                    <img>
-                    <img>
-                    <img>
-                    <img>
-                    <img>
-                </div>
-
-            </div>
-        </div>
-        <div id="tableBox">
-            <table class="tableCells" cellspacing="0">
-                <tbody>
-                    <tr>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                        <th></th>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><p></p><img src="images/Vector Smart Object.png" class="vectorObject"><img src="images/GrayLayer18.png" class="shakesPicture"></td>
-                        <td><p></p><img src="images/Layer18.png" class="shakesPicture"></td>
-                        <td><p></p><img src="images/GrayLayer18.png" class="shakesPicture"></td>
-                        <td><p></p><img src="images/GrayLayer18.png" class="shakesPicture"></td>
-                        <td><p></p><img src="images/GrayLayer18.png" class="shakesPicture"></td>
-                        <td><p></p><img src="images/GrayLayer18.png" class="shakesPicture"></td>
-                        <td rowspan="5"><img src="images/happyFace.png"></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><p></p><img src="images/Vector Smart Object.png" class="vectorObject"></td>
-                        <td><p></p></td>
-                        <td><p></p></td>
-                        <td><p></p></td>
-                        <td><p></p></td>
-                        <td><p></p></td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><p></p><img src="images/Vector Smart Object.png" class="vectorObject"></td>
-                        <td><p></p></td>
-                        <td><p></p><img src="images/GrayLayer18.png" class="shakesPicture"></td>
-                        <td><p></p></td>
-                        <td><p></p><img src="images/GrayLayer18.png" class="shakesPicture"></td>
-                        <td><p></p><img src="images/GrayLayer18.png" class="shakesPicture"></td>
-
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><p></p><img src="images/Vector Smart Object.png" class="vectorObject"></td>
-                        <td><p></p></td>
-                        <td><p></p></td>
-                        <td><p></p></td>
-                        <td><p></p></td>
-                        <td><p></p></td>
-
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><p></p><img src="images/Vector Smart Object.png" class="vectorObject"><img src="images/GrayLayer18.png" class="shakesPicture"></td>
-                        <td><p></p></td>
-                        <td><p></p></td>
-                        <td><p></p></td>
-                        <td><p></p></td>
-                        <td><p></p></td>
-                     
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td rowspan="2"><img src="images/print.png"></td>
-                    </tr>
-                    <tr>
-                        <td>Workout &#9656;</td>
-                        <td><img src="images/orangeDumbell.png"></td>
-                        <td><img src="images/orangeDumbell.png"></td>
-                        <td><img src="images/grayDumbell.png"></td>
-                        <td><img src="images/grayDumbell.png"></td>
-                        <td><img src="images/grayDumbell.png"></td>
-                        <td><img src="images/grayDumbell.png"></td>
-                     
-                        
-
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-        <div id="footer">
-            <div class="advertisement">
-                <h1>Running out of
-                    <br>products?</h1>
-                <p>Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquaent </p>
-                <button>Buy now  <img src="images/RightArrow.png" class="rightArrow"></button>
-            </div>
-            <div class="advertisement">
-                <h1>Bod•e Trainer in
-                    <br> your pocket</h1>
-                <p>Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquaent </p>
-                <div class="buttons">
-                    <button><img src="images/Apple.png">iOS <img src="images/RightArrow.png" class="rightArrow"></button>
-                    <button><img src="images/Android.png">Android <img src="images/RightArrow.png" class="rightArrow"></button>
-                </div>
-            </div>
-            <div class="advertisement">
-                <h1>Frequently Asked
-                    <br> Questions</h1>
-                <p>Lorem ipsum dolor sit amet, consect turadipiscing elit. Integer aliquaent </p>
-                <button>Read FAQs<img src="images/RightArrow.png" class="rightArrow"></button>
-            </div>
-
-        </div>
+        <div id="topOfContainer"></div>
+        <div id="tableBox"></div>
+        <div id="footer"></div>
     </div>
-  
-<script src="js/slider.js"></script>
-<script src="js/data-loader.js"></script>
 
+    <script src="js/HTML-Contents/TopPageContent.js"></script>
+    <script src="js/HTML-Contents/topOfContainerContent.js"></script>
+    <script src="js/HTML-Contents/mainTableContent.js"></script>
+    <script src="js/HTML-Contents/footerContent.js"></script>
+
+    <script src="js/data-loader.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 
 </html>

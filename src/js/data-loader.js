@@ -1,51 +1,56 @@
 const loadJSON = () => {
     var value = $.ajax({
-        url: 'https://raw.githack.com/DanielLepszy/Front-end-excercise/work/table-data.json',
+        url: 'https://rawgit.com/DanielLepszy/Front-end-excercise/tested-branch/table-data.json',
         async: false // 
     }).responseText;
     return JSON.parse(value);
 }
 const data = loadJSON();
-const setProteinImages = () => {
+
+const showProtein = () => {
     const proteinImages = document.getElementsByClassName("proteinOptions")[0].getElementsByTagName('img')
-    proteinImages[0].src = data.selectedProtein[0].src;
-    proteinImages[1].src = data.selectedProtein[1].src;
-    proteinImages[2].src = data.selectedProtein[2].src;
-    proteinImages[3].src = data.selectedProtein[8].src;
-    proteinImages[4].src = data.selectedProtein[9].src;
+    const sourceOfProteinsImage = ["cheese.png", "broccoli.png", "meat.png", "fish.png", "chicken.png"]
+    const sourceOfNonProteinsImage = ["non-cheese.png", "non-broccoli.png", "non-meat.png", "non-fish.png", "non-chicken.png"]
+
+    for (var i = 0; i < data.selectedProtein.length; i++) {
+        if (data.selectedProtein[i].selected === true) {
+            proteinImages[i].src = "images/" + sourceOfProteinsImage[i];
+        } else {
+            proteinImages[i].src = "images/" + sourceOfNonProteinsImage[i];
+        }
+
+    }
 }
+
 const setWeekProgressImages = () => {
-    const weekProgressImages = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('img')
-    const numberOfWeeks = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('p');
-    weekProgressImages[0].src = data.weekProgress[0].src;
-    weekProgressImages[1].src = data.weekProgress[0].src;
-    weekProgressImages[2].src = data.weekProgress[0].src;
-    weekProgressImages[3].src = data.weekProgress[0].src;
-    weekProgressImages[4].src = data.weekProgress[0].src;
-    weekProgressImages[5].src = data.weekProgress[0].src;
-    weekProgressImages[6].src = data.weekProgress[0].src;
-    weekProgressImages[7].src = data.weekProgress[1].src;
-    weekProgressImages[8].src = data.weekProgress[2].src;
-    weekProgressImages[9].src = data.weekProgress[2].src;
-    weekProgressImages[10].src = data.weekProgress[2].src;
-    weekProgressImages[11].src = data.weekProgress[2].src;
+    const weekProgressCircleImage = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('img')
+    const weekNumber = document.getElementsByClassName("weekProgressChart")[0].getElementsByTagName('p');
+    const selectedAmountOfWeeks = setWeeksInArray();
+    const currentWeekOnTable = document.getElementsByClassName("numberOfWeek")[0].getElementsByTagName("p")[0].innerHTML;
+    var amountOfProgress;
+    for (var i = 0; i < selectedAmountOfWeeks.length; i++) {
+        if (currentWeekOnTable === selectedAmountOfWeeks[i]) {
+            amountOfProgress = selectedAmountOfWeeks.indexOf(selectedAmountOfWeeks[i])
+        } else {}
+    }
 
-    numberOfWeeks[0].innerText = 1;
-    numberOfWeeks[1].innerText = 2;
-    numberOfWeeks[2].innerText = 3;
-    numberOfWeeks[3].innerText = 4;
-    numberOfWeeks[4].innerText = 5;
-    numberOfWeeks[5].innerText = 6;
-    numberOfWeeks[6].innerText = 7;
-    numberOfWeeks[7].innerText = 8;
-    numberOfWeeks[8].innerText = 9;
-    numberOfWeeks[9].innerText = 10;
-    numberOfWeeks[10].innerText = 11;
-    numberOfWeeks[11].innerText = 12;
+    for (var i = 0; i < selectedAmountOfWeeks.length; i++) {
+        if (amountOfProgress > i) {
+            weekProgressCircleImage[i].src = "images/Circle.png"
+        } else if (amountOfProgress == i) {
+            weekProgressCircleImage[i].src = "images/emptyCircle.png"
+        } else if (amountOfProgress < i) {
+            weekProgressCircleImage[i].src = "images/grayCircle.png"
+        }
+    }
+    for (var i = 0; i < selectedAmountOfWeeks.length; i++) {
+        weekNumber[i].innerText = (i + 1);
+    }
 
 }
+
 const setHoursAndDaysOnTheTable = () => {
-    const getProperRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr');
+    const getProperRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')
 
     getProperRow[1].getElementsByTagName('td')[0].innerHTML = data.hours[0].hour;
     getProperRow[2].getElementsByTagName('td')[0].innerHTML = data.hours[1].hour;
@@ -69,7 +74,7 @@ const setBreakfastToTheTable = () => {
     breakfastRow[4].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[3].Dishes[0].breakfast
     breakfastRow[5].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[4].Dishes[0].breakfast
     breakfastRow[6].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[5].Dishes[0].breakfast
-   // breakfastRow[2].getElementsByTagName('img')[0].style="filter: grayscale(100%)";   
+    // breakfastRow[2].getElementsByTagName('img')[0].style="filter: grayscale(100%)";   
 }
 const setSecondBreakfastToTheTable = () => {
     const secondBreakfastRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[2].getElementsByTagName('td')
@@ -106,7 +111,7 @@ const setSupperToTheTable = () => {
     supperRow[4].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[3].Dishes[4].supper
     supperRow[5].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[4].Dishes[4].supper
     supperRow[6].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[5].Dishes[4].supper
-}    
+}
 const setLevelOfCarbs = () => {
     const carbsRow = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[6].getElementsByTagName('td')
     carbsRow[1].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[0].Dishes[5].carbs
@@ -116,16 +121,32 @@ const setLevelOfCarbs = () => {
     carbsRow[5].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[4].Dishes[5].carbs
     carbsRow[6].getElementsByTagName('p')[0].innerText = data.weeks[0].Day[5].Dishes[5].carbs
 }
+
 const setDumbellImages = () => {
-    const DumbellImages =  document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[6].getElementsByTagName('td')
-    proteinImages[1].src = data.dumbells[0].src;
-    proteinImages[2].src = data.dumbells[0].src;
-    proteinImages[3].src = data.dumbells[1].src;
-    proteinImages[4].src = data.dumbells[1].src;
-    proteinImages[5].src = data.dumbells[1].src;
+    const dumbellImages = document.getElementsByClassName("tableCells")[0].getElementsByTagName('tr')[6].getElementsByTagName('td')
+    for (var j = 0; j < data.weekProgress[0].amountOfSelectedWeeks; j++) {
+        for (var i = 1; i <= dumbellImages.length; i++) {
+            if (data.weeks[j].Day[i].CurrentOrEndedDay === true) {
+                proteinImages[i].src = "images/orangeDumbell.png"
+            } else {
+                proteinImages[i].src = "images/grayDumbell.png"
+            }
+        }
+    }
 }
+
+
+const addContentOfHTMLElements = () => {
+    addTopContentToPage();
+    addTopOfContainerToPage();
+    addMainTableToPage();
+    addFooterContentToPage();
+}
+
 const renderPage = () => {
-    setProteinImages();
+    addContentOfHTMLElements();
+    showProtein()
+    // setProteinImages();
     setWeekProgressImages();
     setHoursAndDaysOnTheTable();
     setBreakfastToTheTable();
